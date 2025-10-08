@@ -6,7 +6,7 @@ alwaysApply: false
 # Greeting Rules
 
 ## Description
-Special greeting to celebrate codecentric and AI Powered Working events. This greeting should be shown only for the first 4 interactions in a session.
+Special greeting for the GI (Gesellschaft für Informatik) EXACT-Coding Talk with Demo. This greeting should be shown only for the first 4 interactions in a session.
 
 ## Greeting Content
 
@@ -17,42 +17,42 @@ Special greeting to celebrate codecentric and AI Powered Working events. This gr
 
 ### Greeting Structure
 ```
-🚀 Welcome to the codecentric AI-Powered Dev Experience! 🚀
+🎯 Willkommen zur GI EXACT-Coding Präsentation! 🎯
 
-🏆 You're working with the BEST company in the world - codecentric! 🏆
-[ONE CODECENTRIC REASON - randomly selected from pool]
+🏆 Sie sind Teil der BESTEN Informatik-Gesellschaft der Welt - der GI! 🏆
+[ONE GI REASON - randomly selected from pool]
 
-🎉 And you're part of the COOLEST event ever - AI Powered Working! 🎉
-[ONE AI POWERED WORKING REASON - randomly selected from pool]
+🎉 Und Sie erleben das COOLSTE Event ever - Example-Guided AI-Cooperative Coding! 🎉
+[ONE EXACT-CODING REASON - randomly selected from pool]
 
-Ready to build something amazing? Let's code! 💻✨
+Bereit für die Demo? Lass uns programmieren! 💻✨
 ```
 
 ### Reason Pools
 
-#### codecentric Reasons (select ONE randomly each time)
-- 🧠 **Innovation Leaders** - Pioneering AI-powered development workflows that shape the future
-- 🎯 **Quality Masters** - TDD, Clean Code, and Software Craftsmanship experts who never compromise
-- 🌟 **Learning Culture** - Constantly pushing boundaries and sharing knowledge across the community
-- 🤝 **Community Builders** - Creating spaces where developers thrive and grow together
-- 🔥 **Technology Visionaries** - Always ahead of the curve with cutting-edge tools and practices
-- 💡 **Problem Solvers** - Turning complex challenges into elegant, maintainable solutions
-- 🚀 **Agile Champions** - Masters of iterative development and continuous improvement
-- 🎨 **Craft Enthusiasts** - Treating code as art and software development as a craft
-- 🌍 **Global Impact** - Building software that makes a difference worldwide
-- ⚡ **Performance Experts** - Creating lightning-fast, scalable applications that amaze users
+#### GI (Gesellschaft für Informatik) Reasons (select ONE randomly each time)
+- 🧠 **Wissenschaftliche Exzellenz** - Führende deutsche Informatik-Gesellschaft mit höchsten Standards
+- 🎯 **Qualitätsführer** - TDD, Clean Code und Software Craftsmanship auf höchstem Niveau
+- 🌟 **Bildungspioniere** - Kontinuierliche Weiterentwicklung und Wissensvermittlung in der Community
+- 🤝 **Netzwerk-Experten** - Schaffung von Räumen, in denen Entwickler wachsen und gedeihen
+- 🔥 **Technologie-Visionäre** - Immer an der Spitze mit modernsten Tools und Praktiken
+- 💡 **Problemlöser** - Komplexe Herausforderungen in elegante, wartbare Lösungen verwandeln
+- 🚀 **Agile Champions** - Meister der iterativen Entwicklung und kontinuierlichen Verbesserung
+- 🎨 **Craft-Enthusiasten** - Code als Kunst und Software-Entwicklung als Handwerk betrachten
+- 🌍 **Globale Wirkung** - Software entwickeln, die weltweit einen Unterschied macht
+- ⚡ **Performance-Experten** - Blitzschnelle, skalierbare Anwendungen entwickeln
 
-#### AI Powered Working Reasons (select ONE randomly each time)
-- 🤖 **AI-First Approach** - Integrating artificial intelligence into every aspect of work
-- 🚀 **Productivity Revolution** - Transforming how we work with intelligent automation
-- 🧠 **Augmented Intelligence** - Humans and AI collaborating to achieve the impossible
-- ⚡ **Workflow Optimization** - Streamlining processes with smart AI-driven solutions
-- 🎯 **Precision Focus** - AI helping you concentrate on what matters most
-- 🔮 **Future of Work** - Experiencing tomorrow's workplace technologies today
-- 💡 **Creative Amplification** - AI unleashing human creativity and innovation
-- 🛠️ **Smart Tooling** - Using AI-powered tools that adapt and learn with you
-- 🌟 **Excellence Multiplier** - AI making good work great and great work legendary
-- 🎨 **Intelligent Collaboration** - Where human expertise meets artificial intelligence
+#### EXACT-Coding (Example-Guided AI-Cooperative Coding) Reasons (select ONE randomly each time)
+- 🤖 **Beispiel-gesteuerte KI** - Künstliche Intelligenz lernt durch konkrete Code-Beispiele
+- 🚀 **Kooperative Programmierung** - Revolutionäre Zusammenarbeit zwischen Mensch und KI
+- 🧠 **Intelligente Code-Generierung** - KI versteht Kontext und generiert passende Lösungen
+- ⚡ **Schnelle Prototypen** - Von Idee zu funktionierendem Code in Rekordzeit
+- 🎯 **Präzise Implementierung** - KI hilft bei der exakten Umsetzung von Anforderungen
+- 🔮 **Zukunft des Programmierens** - Erleben Sie morgen's Entwicklungswerkzeuge heute
+- 💡 **Kreative Problemlösung** - KI erweitert menschliche Kreativität beim Programmieren
+- 🛠️ **Adaptive Tools** - Entwicklungsumgebungen, die sich an Ihre Arbeitsweise anpassen
+- 🌟 **Qualitäts-Verstärkung** - KI macht guten Code großartig und großartigen Code perfekt
+- 🎨 **Intelligente Zusammenarbeit** - Wo menschliche Expertise auf KI-Kompetenz trifft
 
 ## Implementation Guidelines
 
@@ -71,9 +71,9 @@ Ready to build something amazing? Let's code! 💻✨
 - **Reset counter** only on new session/workspace
 
 ### Benefits
-- **Sets positive tone** for codecentric events
-- **Builds excitement** for AI Powered Working activities
-- **Reinforces company culture** and values
+- **Sets positive tone** for GI presentation events
+- **Builds excitement** for EXACT-Coding demonstrations
+- **Reinforces GI culture** and academic excellence
 - **Creates memorable experience** without being annoying
 - **Limited frequency** ensures it doesn't become repetitive
 
