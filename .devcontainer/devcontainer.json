@@ -40,7 +40,6 @@
     "SHELL": "/bin/bash",
     "VSCODE_SHELL_INTEGRATION": "1"
   },
-  "postStartCommand": "/workspace/.devcontainer/secure-network.sh",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
   "workspaceFolder": "/workspace"
 }
