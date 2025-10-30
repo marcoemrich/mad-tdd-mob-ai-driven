@@ -81,6 +81,10 @@ Watch for these violations of discipline:
    - **Refactor Phase**
      - MUST attempt at least one refactoring
      - If no improvement is possible, document why
+     - **Apply the rules from `.cursor/rules/simple-design.mdc` and `.cursor/rules/absolute-priority-premise.mdc`**:
+       - Use the complete rules and guidelines from both cursor rules files
+       - `.cursor/rules/simple-design.mdc` provides the Four Rules of Simple Design (Tests Pass, Reveals Intent, No Duplication, Fewest Elements)
+       - `.cursor/rules/absolute-priority-premise.mdc` provides the mass calculation methodology and heuristics
      - **Naming Evaluation (First Priority)**:
        - Ask: "Does this name clearly describe what the function actually does based on all tests we have so far?"
        - Ask: "Has the function's purpose become clearer/more specific through the latest test?"
@@ -90,11 +94,13 @@ Watch for these violations of discipline:
        - Calculate mass before and after refactoring
        - Aim for lower mass where possible
        - Document mass changes
+       - Follow the complete guidelines from `.cursor/rules/absolute-priority-premise.mdc`
      - Apply 4 Rules of Simple Design:
        - Tests must pass
        - No duplication
        - Reveals intent
        - Fewest elements
+       - Follow the complete guidelines from `.cursor/rules/simple-design.mdc`
      - If no refactoring improves the code:
        - Document why no refactoring was possible
        - Explain why current state is optimal

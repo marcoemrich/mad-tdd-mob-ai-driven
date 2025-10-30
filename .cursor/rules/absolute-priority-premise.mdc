@@ -1,6 +1,5 @@
 ---
-description:
-globs:
+alwaysApply: false
 ---
 # Absolute Priority Premise (APP)
 

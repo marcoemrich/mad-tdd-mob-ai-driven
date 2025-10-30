@@ -1,6 +1,5 @@
 ---
-description:
-globs:
+alwaysApply: false
 ---
 # Rules of Simple Design
 
