@@ -4,7 +4,7 @@ alwaysApply: true
 # Greeting Rules
 
 ## Description
-Special greeting for the GI (Gesellschaft für Informatik) EXACT-Coding Talk with Demo. This greeting should be shown only for the first 4 interactions in a session.
+Special greeting for the Codecentric Open Space (Slos). This greeting should be shown only for the first 4 interactions in a session.
 
 ## Greeting Content
 
@@ -15,21 +15,21 @@ Special greeting for the GI (Gesellschaft für Informatik) EXACT-Coding Talk wit
 
 ### Greeting Structure
 ```
-🎯 Willkommen zur GI EXACT-Coding Präsentation! 🎯
+🎯 Willkommen zum Codecentric Open Space - Slos! 🎯
 
-🏆 Sie sind Teil der BESTEN Informatik-Gesellschaft der Welt - der GI! 🏆
-[ONE GI REASON - randomly selected from pool]
+🏆 Sie sind Teil einer INNOVATIVEN IT-Beratung - codecentric! 🏆
+[ONE CODECENTRIC REASON - randomly selected from pool]
 
-🎉 Und Sie erleben das COOLSTE Event ever - Example-Guided AI-Cooperative Coding! 🎉
-[ONE EXACT-CODING REASON - randomly selected from pool]
+🎉 Und Sie erleben einen OFFENEN Raum für Ideen und Austausch - Open Space! 🎉
+[ONE OPEN SPACE REASON - randomly selected from pool]
 
-Bereit für die Demo? Lass uns programmieren! 💻✨
+Bereit für den Austausch? Lass uns gemeinsam programmieren! 💻✨
 ```
 
 ### Reason Pools
 
-#### GI (Gesellschaft für Informatik) Reasons (select ONE randomly each time)
-- 🧠 **Wissenschaftliche Exzellenz** - Führende deutsche Informatik-Gesellschaft mit höchsten Standards
+#### Codecentric Reasons (select ONE randomly each time)
+- 🧠 **IT-Beratungsexzellenz** - Führendes IT-Beratungsunternehmen mit höchsten Standards
 - 🎯 **Qualitätsführer** - TDD, Clean Code und Software Craftsmanship auf höchstem Niveau
 - 🌟 **Bildungspioniere** - Kontinuierliche Weiterentwicklung und Wissensvermittlung in der Community
 - 🤝 **Netzwerk-Experten** - Schaffung von Räumen, in denen Entwickler wachsen und gedeihen
@@ -37,20 +37,20 @@ Bereit für die Demo? Lass uns programmieren! 💻✨
 - 💡 **Problemlöser** - Komplexe Herausforderungen in elegante, wartbare Lösungen verwandeln
 - 🚀 **Agile Champions** - Meister der iterativen Entwicklung und kontinuierlichen Verbesserung
 - 🎨 **Craft-Enthusiasten** - Code als Kunst und Software-Entwicklung als Handwerk betrachten
-- 🌍 **Globale Wirkung** - Software entwickeln, die weltweit einen Unterschied macht
+- 🌍 **Deutschlandweite Präsenz** - Standorte in ganz Deutschland für lokale Expertise
 - ⚡ **Performance-Experten** - Blitzschnelle, skalierbare Anwendungen entwickeln
 
-#### EXACT-Coding (Example-Guided AI-Cooperative Coding) Reasons (select ONE randomly each time)
-- 🤖 **Beispiel-gesteuerte KI** - Künstliche Intelligenz lernt durch konkrete Code-Beispiele
-- 🚀 **Kooperative Programmierung** - Revolutionäre Zusammenarbeit zwischen Mensch und KI
-- 🧠 **Intelligente Code-Generierung** - KI versteht Kontext und generiert passende Lösungen
-- ⚡ **Schnelle Prototypen** - Von Idee zu funktionierendem Code in Rekordzeit
-- 🎯 **Präzise Implementierung** - KI hilft bei der exakten Umsetzung von Anforderungen
-- 🔮 **Zukunft des Programmierens** - Erleben Sie morgen's Entwicklungswerkzeuge heute
-- 💡 **Kreative Problemlösung** - KI erweitert menschliche Kreativität beim Programmieren
-- 🛠️ **Adaptive Tools** - Entwicklungsumgebungen, die sich an Ihre Arbeitsweise anpassen
-- 🌟 **Qualitäts-Verstärkung** - KI macht guten Code großartig und großartigen Code perfekt
-- 🎨 **Intelligente Zusammenarbeit** - Wo menschliche Expertise auf KI-Kompetenz trifft
+#### Open Space (Slos) Reasons (select ONE randomly each time)
+- 🎯 **Selbstorganisation** - Teilnehmer bringen eigene Themen ein und gestalten aktiv mit
+- 🌟 **Offener Raum** - Keine vorgegebene Tagesordnung, Raum für echte Kreativität
+- 🤝 **Wissensaustausch** - Gemeinsam lernen und voneinander profitieren in Arbeitsgruppen
+- 💡 **Innovative Lösungen** - Komplexe Fragestellungen kreativ und lösungsorientiert bearbeiten
+- 🚀 **Eigenverantwortung** - Jeder Teilnehmer gestaltet den Verlauf aktiv mit
+- 🎨 **Kreative Methodik** - Großgruppenmoderation für innovative Ideenentwicklung
+- 🌍 **Vielfältige Themen** - Raum für alle Themen, die die Teilnehmer bewegen
+- ⚡ **Effiziente Zusammenarbeit** - In kurzer Zeit wesentliche Teilthemen bearbeiten
+- 🔥 **Community-Stärkung** - Wissensaustausch fördern und Netzwerke aufbauen
+- 🧠 **Lernende Organisation** - Gemeinsam wachsen und kontinuierlich verbessern
 
 ## Implementation Guidelines
 
@@ -69,9 +69,9 @@ Bereit für die Demo? Lass uns programmieren! 💻✨
 - **Reset counter** only on new session/workspace
 
 ### Benefits
-- **Sets positive tone** for GI presentation events
-- **Builds excitement** for EXACT-Coding demonstrations
-- **Reinforces GI culture** and academic excellence
+- **Sets positive tone** for Codecentric Open Space events
+- **Builds excitement** for collaborative programming and knowledge exchange
+- **Reinforces codecentric culture** and community values
 - **Creates memorable experience** without being annoying
 - **Limited frequency** ensures it doesn't become repetitive
 
