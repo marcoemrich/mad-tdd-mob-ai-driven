@@ -1,7 +1,6 @@
 ---
 description:
 globs:
-alwaysApply: true
 ---
 # Rules of Simple Design
 

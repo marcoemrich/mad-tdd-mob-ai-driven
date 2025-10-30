@@ -1,7 +1,142 @@
 ---
-description:
-globs:
+description: Refactor code using Simple Design Rules and Absolute Priority Premise
 ---
+
+# Refactor Command
+
+When this command is triggered, apply the following refactoring principles:
+
+# Rules of Simple Design
+
+## Description
+Kent Beck's Four Rules of Simple Design - fundamental principles for writing clean, maintainable code. These rules are applied in priority order and work synergistically with TDD.
+
+## The Four Rules (in priority order)
+
+### 1. Tests Pass
+- All tests must pass
+- The code must work correctly
+- This is the highest priority rule - never compromise working code
+- If tests don't pass, fix them before applying other rules
+
+### 2. Reveals Intent
+- Code should clearly express what it does
+- Use meaningful names for variables, functions, and classes
+- Structure code to be self-documenting
+- Prefer explicit over clever code
+- Comments should explain "why", not "what"
+
+### 3. No Duplication (DRY)
+- Don't repeat yourself
+- Extract common functionality into reusable components
+- Look for both obvious duplication and conceptual duplication
+- Knowledge should have a single, unambiguous representation
+
+### 4. Fewest Elements
+- Minimize the number of classes, methods, and other code elements
+- Remove unnecessary abstractions
+- Keep it simple - don't over-engineer
+- Only add complexity when it serves a clear purpose
+
+## Application Guidelines
+
+### Priority Order
+- Apply rules in order: 1 → 2 → 3 → 4
+- Never violate a higher-priority rule to satisfy a lower-priority one
+- If rule #3 conflicts with rule #2, choose clarity over DRY
+
+### Integration with TDD
+- **Red Phase**: Focus on rule #1 (make tests pass)
+- **Green Phase**: Still focus on rule #1 (minimal working code)
+- **Refactor Phase**: Apply rules #2, #3, #4 while preserving #1
+
+## Examples
+
+### Rule 2: Reveals Intent
+```typescript
+// Bad
+function calc(w: string[]): boolean {
+  return w.every((x, i) => i === 0 || diff(x, w[i-1]) === 1);
+}
+
+// Good
+function isValidWordChain(words: string[]): boolean {
+  return words.every((word, index) =>
+    index === 0 || differsByOneLetter(word, words[index - 1])
+  );
+}
+```
+
+### Rule 3: No Duplication
+```typescript
+// Bad
+function differsByOneLetter(word1: string, word2: string): boolean {
+  if (word1.length !== word2.length) return false;
+  let differences = 0;
+  for (let i = 0; i < word1.length; i++) {
+    if (word1[i] !== word2[i]) differences++;
+  }
+  return differences === 1;
+}
+
+function isAdjacent(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let diffs = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) diffs++;
+  }
+  return diffs === 1;
+}
+
+// Good - Extract common logic
+function countDifferences(word1: string, word2: string): number {
+  if (word1.length !== word2.length) return Infinity;
+  return word1.split('').reduce((count, char, i) =>
+    char !== word2[i] ? count + 1 : count, 0
+  );
+}
+
+function differsByOneLetter(word1: string, word2: string): boolean {
+  return countDifferences(word1, word2) === 1;
+}
+```
+
+### Rule 4: Fewest Elements
+```typescript
+// Bad - Unnecessary abstraction
+class WordValidator {
+  validate(word: string): boolean { return word.length > 0; }
+}
+class ChainValidator {
+  private wordValidator = new WordValidator();
+  validate(chain: string[]): boolean { /* ... */ }
+}
+
+// Good - Simple functions
+function isValidWord(word: string): boolean {
+  return word.length > 0;
+}
+
+function isValidChain(chain: string[]): boolean {
+  return chain.every(isValidWord) &&
+         chain.every((word, i) => i === 0 || differsByOneLetter(word, chain[i-1]));
+}
+```
+
+## Red Flags
+- Code that's hard to name (violates rule #2)
+- Copy-paste programming (violates rule #3)
+- Classes with single methods (may violate rule #4)
+- Deep inheritance hierarchies (may violate rule #4)
+- Premature abstractions (violates rule #4)
+
+## Remember
+- Simple ≠ Easy
+- Simple means "not complex" or "not compound"
+- These rules help achieve simplicity through disciplined practice
+
+---
+
 # Absolute Priority Premise (APP)
 
 ## Description
@@ -200,3 +335,17 @@ String wrapRecursive(String line, int maxLineLen) {
 
 ### Secondary Sources
 - **Peter Kofler's detailed analysis** - [Absolute Priority Premise, an Example](mdc:https:/blog.code-cop.org/2016/08/absolute-priority-premise-example.html) - comprehensive explanation with Word Wrap kata examples and tool implementation
+
+---
+
+## How to Use This Command
+
+When you trigger `/refactor`, the AI will:
+1. Apply Kent Beck's Four Rules of Simple Design (in priority order)
+2. Use Absolute Priority Premise (APP) to measure and guide code improvements
+3. Focus on reducing code mass while maintaining clarity
+4. Ensure all tests pass before and after refactoring
+5. Document mass calculations and refactoring decisions
+
+**Priority**: Simple Design Rule #2 (Reveals Intent) always trumps APP - clarity over low mass.
+
